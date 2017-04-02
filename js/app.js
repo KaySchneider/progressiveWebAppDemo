@@ -44,7 +44,6 @@ app.prototype._render=function() {
     this.pages.map(function(item) {
         this._html = this._html + this.template(item);
     }.bind(this));
-    console.log(this._html);
     this.pageContainers.innerHTML=this._html;
 };
 
